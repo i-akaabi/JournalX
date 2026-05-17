@@ -216,3 +216,46 @@
 - DELETE Route erstellen
 - SQLite Daten löschen
 - Login-System vorbereiten
+
+# 📅 Sonntag
+
+## 🎯 Ziele für heute
+
+- DELETE Route fertigstellen
+- CRUD vollständig umsetzen
+- SQLite Daten löschen
+- REST Client weiter verwenden
+- Sprint 3 vorbereiten
+
+## ✅ Fortschritt
+
+- DELETE Route erfolgreich mit SQLite verbunden
+- DELETE Requests erfolgreich getestet
+- SQLite Daten erfolgreich gelöscht
+- CRUD vollständig umgesetzt
+- REST Client für DELETE Requests verwendet
+
+## 🧠 Gelernt
+
+- Verständnis für DELETE SQL Befehle
+- Verständnis für DELETE Requests verbessert
+- Verständnis für SQLite Löschvorgänge erweitert
+
+## ⚠️ Probleme
+
+- Krankheitsbedingte Pause im Projekt
+- Wieder in den Projektfluss reinkommen
+
+## 💡 Lösungen
+
+- Projektstruktur erneut überprüft
+- CRUD Schritt für Schritt weiter aufgebaut
+- API erneut getestet
+
+## 🔄 Nächste Schritte
+
+- Login-System vorbereiten
+- Kleine HTML Oberfläche erstellen
+- Projekt für Präsentation vorbereiten
+- API Struktur erklären lernen
+- Sprint 3 starten
