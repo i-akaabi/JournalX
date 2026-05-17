@@ -107,6 +107,27 @@ def update_entry(id):
         "content": content
     })
 
+@app.route("/entries/<int:id>", methods=["DELETE"])
+def delete_entry(id):
+
+    connection = sqlite3.connect("database.db")
+
+    cursor = connection.cursor()
+
+    cursor.execute("""
+        DELETE FROM entries
+        WHERE id = ?
+    """, (id,))
+
+    connection.commit()
+
+    connection.close()
+
+    return jsonify({
+        "message": "Eintrag gelöscht",
+        "id": id
+    })
+
 if __name__ == "__main__":
 
     init_db()
