@@ -234,28 +234,43 @@
 - SQLite Daten erfolgreich gelöscht
 - CRUD vollständig umgesetzt
 - REST Client für DELETE Requests verwendet
+- users Tabelle in SQLite erstellt
+- Registrierungssystem ergänzt
+- Login-System erfolgreich umgesetzt
+- Benutzer erfolgreich in SQLite gespeichert
+- Login Requests erfolgreich getestet
 
 ## 🧠 Gelernt
 
 - Verständnis für DELETE SQL Befehle
 - Verständnis für DELETE Requests verbessert
 - Verständnis für SQLite Löschvorgänge erweitert
+- Verständnis für Benutzerverwaltung erweitert
+- Verständnis für Login Requests verbessert
+- Verständnis für SELECT Abfragen vertieft
+- Verständnis für Frontend und API Kommunikation erweitert
 
 ## ⚠️ Probleme
 
 - Krankheitsbedingte Pause im Projekt
 - Wieder in den Projektfluss reinkommen
+- Verständnis für Login Ablauf und Benutzerverwaltung
+- Verständnis für REST Client als Benutzer-Simulation
 
 ## 💡 Lösungen
 
 - Projektstruktur erneut überprüft
 - CRUD Schritt für Schritt weiter aufgebaut
 - API erneut getestet
+- Login Schritt für Schritt getestet
+- API Requests erneut analysiert
+- Datenfluss zwischen Frontend, API und SQLite nachvollzogen
 
 ## 🔄 Nächste Schritte
 
-- Login-System vorbereiten
 - Kleine HTML Oberfläche erstellen
 - Projekt für Präsentation vorbereiten
-- API Struktur erklären lernen
-- Sprint 3 starten
+- Code kommentieren und erklären
+- API Struktur besser verstehen
+- Projekt testen und Fehler beheben
+- Demo für die Prüfung vorbereiten
