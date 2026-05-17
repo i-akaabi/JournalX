@@ -20,6 +20,14 @@ def init_db():
     """)
 
     cursor.execute("""
+    CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT NOT NULL,
+        password TEXT NOT NULL
+    )
+""")
+
+    cursor.execute("""
         INSERT INTO entries (title, content)
         VALUES (?, ?)
     """, ("Test Eintrag", "SQLite funktioniert"))
@@ -76,6 +84,67 @@ def create_entry():
     return jsonify({
     "message": "Neuer Eintrag erstellt"
 })
+
+@app.route("/register", methods=["POST"])
+def register():
+
+    data = request.get_json()
+
+    username = data["username"]
+
+    password = data["password"]
+
+    connection = sqlite3.connect("database.db")
+
+    cursor = connection.cursor()
+
+    cursor.execute("""
+        INSERT INTO users (username, password)
+        VALUES (?, ?)
+    """, (username, password))
+
+    connection.commit()
+
+    connection.close()
+
+    return jsonify({
+        "message": "Benutzer registriert",
+        "username": username
+    })
+
+@app.route("/login", methods=["POST"])
+def login():
+
+    data = request.get_json()
+
+    username = data["username"]
+
+    password = data["password"]
+
+    connection = sqlite3.connect("database.db")
+
+    cursor = connection.cursor()
+
+    cursor.execute("""
+        SELECT * FROM users
+        WHERE username = ? AND password = ?
+    """, (username, password))
+
+    user = cursor.fetchone()
+
+    connection.close()
+
+    if user:
+
+        return jsonify({
+            "message": "Login erfolgreich"
+        })
+
+    else:
+
+        return jsonify({
+            "message": "Falsche Login Daten"
+        })
 
 @app.route("/entries/<int:id>", methods=["PUT"])
 def update_entry(id):
