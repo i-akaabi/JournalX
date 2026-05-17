@@ -15,3 +15,7 @@ Content-Type: application/json
     "title": "Aktualisierter Eintrag",
     "content": "Dieser Eintrag wurde mit PUT bearbeitet"
 }
+
+###
+
+DELETE http://127.0.0.1:5000/entries/1
