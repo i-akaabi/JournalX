@@ -81,6 +81,13 @@ def home():
 
     return render_template("index.html")
 
+# Login Seite anzeigen
+
+@app.route("/login-page")
+def login_page():
+
+    return render_template("login.html")
+
 
 # ---------------------------------------------------
 # ALLE EINTRÄGE ANZEIGEN (READ)
