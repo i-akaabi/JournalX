@@ -1,6 +1,6 @@
 # Sprint 2 – Woche 2
 
-## 🎯 Ziele für Sprint 2
+## 📅 Ziele für Sprint 2
 
 - CRUD Funktionen erweitern
 - PUT Requests verstehen und umsetzen

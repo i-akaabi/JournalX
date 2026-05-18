@@ -161,7 +161,7 @@ Aufbau der Projektstruktur und erste Backend-Grundlagen.
 
 ## 📅 Freitag
 
-### 🎯 Ziele für heute
+## 🎯 Ziele für heute
 
 - Daten direkt aus SQLite abrufen
 - Feste Python-Testdaten ersetzen
