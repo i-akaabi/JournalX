@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <!-- Zeichencodierung -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser Titel -->
+    <title>Registrierung - JournalX</title>
+
+    <style>
+
+        /* Gesamte Seite */
+        body {
+
+            margin: 0;
+
+            font-family: Arial, sans-serif;
+
+            background-color: #0f172a;
+
+            color: white;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+        }
+
+        /* Registrierungsbox */
+        .register-container {
+
+            background-color: #1e293b;
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            width: 400px;
+
+            text-align: center;
+
+        }
+
+        /* Überschrift */
+        h1 {
+
+            color: #3b82f6;
+
+            margin-bottom: 30px;
+
+        }
+
+        /* Eingabefelder */
+        input {
+
+            width: 100%;
+
+            padding: 15px;
+
+            margin: 10px 0;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background-color: #0f172a;
+
+            color: white;
+
+            font-size: 16px;
+
+            box-sizing: border-box;
+
+        }
+
+        /* Button */
+        button {
+
+            width: 100%;
+
+            padding: 15px;
+
+            margin-top: 20px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background-color: #3b82f6;
+
+            color: white;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+        }
+
+        /* Text */
+        p {
+
+            margin-top: 20px;
+
+        }
+
+        /* Link */
+        a {
+
+            color: #3b82f6;
+
+            text-decoration: none;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Registrierungsbereich -->
+    <div class="register-container">
+
+        <h1>Registrierung</h1>
+
+        <!-- Formular -->
+        <form id="registerForm">
+
+            <!-- Benutzername -->
+            <input
+                type="text"
+                id="username"
+                placeholder="Benutzername"
+            >
+
+            <!-- Passwort -->
+            <input
+                type="password"
+                id="password"
+                placeholder="Passwort"
+            >
+
+            <!-- Registrieren Button -->
+            <button type="submit">
+
+                Registrieren
+
+            </button>
+
+        </form>
+
+        <!-- Link zum Login -->
+        <p>
+
+            Bereits registriert?
+
+            <a href="/login-page">
+
+                Zum Login
+
+            </a>
+
+        </p>
+
+    </div>
+
+    <script>
+
+        // Registrierungsformular überwachen
+
+        document.getElementById("registerForm").addEventListener("submit", async function(event) {
+
+            // Verhindert Neuladen der Seite
+            event.preventDefault();
+
+            // Benutzername lesen
+            const username = document.getElementById("username").value;
+
+            // Passwort lesen
+            const password = document.getElementById("password").value;
+
+            // POST Request an Flask senden
+            const response = await fetch("/register", {
+
+                method: "POST",
+
+                headers: {
+
+                    "Content-Type": "application/json"
+
+                },
+
+                // Daten senden
+                body: JSON.stringify({
+
+                    username: username,
+
+                    password: password
+
+                })
+
+            });
+
+            // Antwort lesen
+            const data = await response.json();
+
+            // Nachricht anzeigen
+            alert(data.message);
+
+            // Nach Registrierung weiterleiten
+            window.location.href = "/login-page";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
