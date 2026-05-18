@@ -1,39 +1,166 @@
-# Journal API Backend
+# JournalX – Digitale Journal Webanwendung
 
-## 📌 Projektbeschreibung
-Dieses Projekt ist ein Backend-System für ein digitales Tagebuch.
+JournalX ist eine moderne Journal- und Tagebuch-Webanwendung, die mit Flask, SQLite, HTML, CSS und JavaScript entwickelt wurde.
 
-Nutzer können sich registrieren, einloggen und persönliche Tagebucheinträge erstellen.  
-Einträge können privat bleiben oder optional öffentlich gemacht werden.
+Benutzer können persönliche Journal-Einträge erstellen, anzeigen, bearbeiten und löschen. Zusätzlich verfügt die Anwendung über ein Login- und Registrierungssystem.
 
-## 🎯 Ziel
-Ziel ist es, eine REST-API zu entwickeln, die:
-- Benutzer verwaltet
-- Einträge speichert
-- CRUD-Operationen ermöglicht
+Die Anwendung verbindet Frontend, Backend und Datenbank über eine REST API.
 
-## ⚙️ Technologien
-- Python (Flask)
+---
+
+# Projektbeschreibung
+
+Das Ziel des Projekts war die Entwicklung einer interaktiven Webanwendung für digitale Journal-Einträge.
+
+Benutzer können:
+
+- persönliche Gedanken speichern
+- Einträge verwalten
+- sich registrieren
+- sich einloggen
+- Einträge bearbeiten und löschen
+
+Die Anwendung wurde lokal mit Flask entwickelt und verwendet SQLite als Datenbank.
+
+---
+
+# Funktionen
+
+## Benutzer Funktionen
+
+- Registrierung
+- Login System
+- Benutzerverwaltung
+
+---
+
+## Journal Funktionen
+
+- Einträge erstellen
+- Einträge anzeigen
+- Einträge bearbeiten
+- Einträge löschen
+
+---
+
+## CRUD System
+
+Die Anwendung unterstützt vollständige CRUD Operationen:
+
+- Create → Einträge erstellen
+- Read → Einträge anzeigen
+- Update → Einträge bearbeiten
+- Delete → Einträge löschen
+
+---
+
+# Frontend
+
+Die Benutzeroberfläche wurde mit:
+
+- HTML
+- CSS
+- JavaScript
+
+entwickelt.
+
+JavaScript kommuniziert über Fetch API Requests mit dem Flask Backend.
+
+---
+
+# Backend
+
+Das Backend wurde mit Flask entwickelt.
+
+Die REST API verarbeitet:
+
+- GET Requests
+- POST Requests
+- PUT Requests
+- DELETE Requests
+
+---
+
+# Datenbank
+
+Als Datenbank wird SQLite verwendet.
+
+Es existieren folgende Tabellen:
+
+## users
+
+Speichert Benutzer:
+
+- id
+- username
+- password
+
+---
+
+## entries
+
+Speichert Journal Einträge:
+
+- id
+- title
+- content
+
+---
+
+# Verwendete Technologien
+
+- Python
+- Flask
 - SQLite
+- HTML
+- CSS
+- JavaScript
+- Git
 - GitHub
 
-## 🧱 Funktionen (geplant)
+---
 
-### Benutzer
-- Registrierung
-- Login
+# API Endpoints
 
-### Einträge
-- Erstellen
-- Anzeigen
-- Bearbeiten
-- Löschen
-- Öffentlich / Privat
+## GET /entries
 
-## 📅 Sprint 1 (Woche 1)
-- Projektstruktur erstellen
-- Datenbank aufbauen
-- erste API-Endpunkte
+Gibt alle Journal Einträge zurück.
 
-## 📖 Dokumentation
-Fortschritte werden im Ordner /docs festgehalten.
+---
+
+## POST /entries
+
+Erstellt einen neuen Journal Eintrag.
+
+---
+
+## PUT /entries/<id>
+
+Bearbeitet einen bestehenden Eintrag.
+
+---
+
+## DELETE /entries/<id>
+
+Löscht einen Journal Eintrag.
+
+---
+
+## POST /register
+
+Registriert einen Benutzer.
+
+---
+
+## POST /login
+
+Überprüft Login Daten.
+
+---
+
+# Projekt starten
+
+## Virtuelle Umgebung aktivieren
+
+```bash
+source .venv/bin/activate
