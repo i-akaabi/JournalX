@@ -3,176 +3,220 @@
 
 <head>
 
- <!-- Zeichencodierung -->
-<meta charset="UTF-8">
+    <!-- Zeichencodierung -->
+    <meta charset="UTF-8">
 
-<!-- Responsive Design -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Browser Titel -->
-<title>JournalX</title>
+    <!-- Browser Titel -->
+    <title>JournalX</title>
 
-<style>
+    <style>
 
-/* Grunddesign */
-body {
+        /* Gesamte Webseite */
+        body {
+
             margin: 0;
+
             font-family: Arial, sans-serif;
+
             background-color: #0f172a;
+
             color: white;
+
         }
 
-        /* Navigation oben */
+        /* Kopfbereich */
         header {
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
+
             padding: 20px 60px;
+
             background-color: #111827;
+
             box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+
         }
 
         /* Logo */
         .logo {
+
             font-size: 28px;
+
             font-weight: bold;
+
             color: #3b82f6;
+
         }
 
-        /* Navigation Links */
+        /* Navigation */
         nav a {
+
             color: white;
+
             text-decoration: none;
-            margin-left: 20px;
+
+            margin-left: 25px;
+
+            font-size: 17px;
+
         }
 
         /* Hero Bereich */
         .hero {
+
             text-align: center;
-            padding: 100px 20px;
+
+            padding: 120px 20px;
+
         }
 
+        /* Große Überschrift */
         .hero h1 {
+
             font-size: 60px;
+
             margin-bottom: 20px;
+
+            color: #3b82f6;
+
         }
 
+        /* Beschreibung */
         .hero p {
+
             font-size: 22px;
+
             color: #cbd5e1;
+
             max-width: 700px;
+
             margin: auto;
+
             line-height: 1.6;
+
         }
 
-        /* Buttons */
+        /* Buttons Bereich */
         .buttons {
+
             margin-top: 40px;
-        }
 
-        .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            margin: 10px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-size: 18px;
-            background-color: #3b82f6;
-            color: white;
-        }
-
-        /* Kartenbereich */
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 80px 40px;
-            flex-wrap: wrap;
-        }
-
-        /* Einzelne Karte */
-        .card {
-            background-color: #1e293b;
-            padding: 30px;
-            width: 280px;
-            border-radius: 18px;
-            text-align: center;
-        }
-
-        .card h3 {
-            color: #3b82f6;
-        }
-
-        /* Login / Journal / Entries Bereich */
-        .login-section,
-        .journal-section,
-        .entries-section {
-            text-align: center;
-            margin: 80px 20px;
-        }
-
-        /* Formulare */
-        .login-form,
-        .journal-form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Eingabefelder */
-        .login-form input,
-        .journal-form input,
-        .journal-form textarea {
-            width: 400px;
-            padding: 15px;
-            margin: 10px;
-            border: none;
-            border-radius: 10px;
-            background-color: #1e293b;
-            color: white;
-            font-size: 16px;
-        }
-
-        /* Textbereich */
-        .journal-form textarea {
-            height: 150px;
-            resize: none;
         }
 
         /* Buttons */
-        .login-form button,
-        .journal-form button,
-        .entry-card button {
-            margin-top: 20px;
-            margin-right: 10px;
-            padding: 14px 28px;
-            border: none;
-            border-radius: 10px;
+        .btn {
+
+            display: inline-block;
+
+            padding: 15px 30px;
+
+            margin: 10px;
+
+            border-radius: 12px;
+
+            text-decoration: none;
+
             background-color: #3b82f6;
+
             color: white;
-            font-size: 16px;
-            cursor: pointer;
+
+            font-size: 18px;
+
         }
 
-        /* Eintragskarten */
-        .entry-card {
+        /* Feature Bereich */
+        .features {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 30px;
+
+            margin: 80px 40px;
+
+            flex-wrap: wrap;
+
+        }
+
+        /* Karten */
+        .card {
+
             background-color: #1e293b;
-            width: 500px;
-            margin: 30px auto;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: left;
+
+            padding: 30px;
+
+            width: 280px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
         }
 
-        .entry-card h3 {
+        /* Karten Überschrift */
+        .card h3 {
+
             color: #3b82f6;
+
+        }
+
+        /* FAQ Bereich */
+        .faq {
+
+            padding: 80px 40px;
+
+            text-align: center;
+
+        }
+
+        .faq h2 {
+
+            color: #3b82f6;
+
+            margin-bottom: 40px;
+
+        }
+
+        /* FAQ Karten */
+        .faq-item {
+
+            background-color: #1e293b;
+
+            padding: 25px;
+
+            margin: 20px auto;
+
+            max-width: 800px;
+
+            border-radius: 15px;
+
+            text-align: left;
+
+        }
+
+        .faq-item h3 {
+
+            color: #3b82f6;
+
         }
 
         /* Footer */
         footer {
+
             text-align: center;
-            padding: 30px;
+
+            padding: 40px;
+
             color: #94a3b8;
+
         }
 
     </style>
@@ -186,308 +230,203 @@ body {
 
         <!-- Logo -->
         <div class="logo">
+
             JournalX
+
         </div>
 
         <!-- Navigation -->
         <nav>
+
             <a href="/">Home</a>
-            <a href="#journal">Journal</a>
+
+            <a href="/login-page">
+
+                Login
+
+            </a>
+
+            <a href="/register-page">
+
+                Registrieren
+
+            </a>
+
+            <a href="/journal">
+
+                Journal
+
+            </a>
+
         </nav>
 
     </header>
 
-    <!-- Startbereich -->
+    <!-- Hero Bereich -->
     <section class="hero">
 
-        <h1>Schreibe deine Gedanken. <br> Verändere deine Zukunft.</h1>
+        <!-- Hauptüberschrift -->
+        <h1>
 
+            Halte deine Gedanken fest.
+
+        </h1>
+
+        <!-- Beschreibung -->
         <p>
-            JournalX hilft dir dabei, Gedanken, Ziele und Erinnerungen
-            an einem sicheren Ort festzuhalten.
+
+            JournalX ist dein persönlicher digitaler Raum
+            für Gedanken, Ziele, Erinnerungen und tägliche Reflexionen.
+
         </p>
 
+        <!-- Buttons -->
         <div class="buttons">
 
-            <a href="#journal" class="btn">
+            <!-- Registrierungsbutton -->
+            <a href="/register-page" class="btn">
+
                 Jetzt starten
+
+            </a>
+
+            <!-- Login Button -->
+            <a href="/login-page" class="btn">
+
+                Login
+
             </a>
 
         </div>
 
     </section>
 
-    <!-- Informationskarten -->
+    <!-- Features -->
     <section class="features">
 
+        <!-- Karte 1 -->
         <div class="card">
-            <h3>Deine Gedanken</h3>
-            <p>Halte deine Ideen und Erinnerungen fest.</p>
+
+            <h3>
+
+                Deine Gedanken
+
+            </h3>
+
+            <p>
+
+                Halte Erinnerungen, Ideen und persönliche Gedanken fest.
+
+            </p>
+
         </div>
 
+        <!-- Karte 2 -->
         <div class="card">
-            <h3>Deine Ziele</h3>
-            <p>Dokumentiere deinen Fortschritt jeden Tag.</p>
+
+            <h3>
+
+                Deine Entwicklung
+
+            </h3>
+
+            <p>
+
+                Dokumentiere deinen Fortschritt und reflektiere deinen Alltag.
+
+            </p>
+
         </div>
 
+        <!-- Karte 3 -->
         <div class="card">
-            <h3>Dein persönlicher Raum</h3>
-            <p>Ein sicherer Ort für deine täglichen Gedanken.</p>
+
+            <h3>
+
+                Dein persönlicher Raum
+
+            </h3>
+
+            <p>
+
+                Ein sicherer Ort für deine täglichen Einträge und Ziele.
+
+            </p>
+
         </div>
 
     </section>
 
-    <!-- Login Bereich -->
-    <section class="login-section">
+    <!-- FAQ Bereich -->
+    <section class="faq">
 
-        <h2>Login</h2>
+        <!-- Überschrift -->
+        <h2>
 
-        <!-- Login Formular -->
-        <form class="login-form" id="loginForm">
+            Häufige Fragen
 
-            <!-- Benutzername -->
-            <input type="text" id="username" placeholder="Benutzername">
+        </h2>
 
-            <!-- Passwort -->
-            <input type="password" id="password" placeholder="Passwort">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
 
-            <!-- Login Button -->
-            <button type="submit">
-                Einloggen
-            </button>
+            <h3>
 
-        </form>
+                Was ist JournalX?
 
-    </section>
+            </h3>
 
-    <!-- Journal Bereich -->
-    <section class="journal-section" id="journal">
+            <p>
 
-        <h2>Neuen Eintrag erstellen</h2>
+                JournalX ist eine digitale Journal Plattform,
+                auf der persönliche Gedanken und Erinnerungen gespeichert werden können.
 
-        <!-- Formular für neue Einträge -->
-        <form class="journal-form" id="entryForm">
+            </p>
 
-            <!-- Titel -->
-            <input type="text" id="title" placeholder="Titel deines Eintrags">
+        </div>
 
-            <!-- Inhalt -->
-            <textarea id="content" placeholder="Schreibe deine Gedanken hier..."></textarea>
+        <!-- FAQ 2 -->
+        <div class="faq-item">
 
-            <!-- Speichern -->
-            <button type="submit">
-                Eintrag speichern
-            </button>
+            <h3>
 
-        </form>
+                Muss ich mich registrieren?
 
-    </section>
+            </h3>
 
-    <!-- Einträge Bereich -->
-    <section class="entries-section">
+            <p>
 
-        <h2>Letzte Einträge</h2>
+                Ja, für die Nutzung des Journals wird ein Benutzerkonto benötigt.
 
-        <!-- Hier werden Einträge automatisch eingefügt -->
-        <div id="entriesContainer"></div>
+            </p>
+
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+
+            <h3>
+
+                Kann ich meine Einträge bearbeiten?
+
+            </h3>
+
+            <p>
+
+                Ja, Einträge können gespeichert, bearbeitet und gelöscht werden.
+
+            </p>
+
+        </div>
 
     </section>
 
     <!-- Footer -->
     <footer>
+
         JournalX © 2026
+
     </footer>
-
-    <script>
-
-        // LOGIN FUNKTION
-
-        document.getElementById("loginForm").addEventListener("submit", async function(event) {
-
-            // Verhindert Neuladen der Seite
-            event.preventDefault();
-
-            // Eingaben lesen
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            // POST Request an Flask senden
-            const response = await fetch("/login", {
-
-                method: "POST",
-
-                headers: {
-                    "Content-Type": "application/json"
-                },
-
-                // Daten als JSON senden
-                body: JSON.stringify({
-                    username: username,
-                    password: password
-                })
-
-            });
-
-            // Antwort lesen
-            const data = await response.json();
-
-            // Nachricht anzeigen
-            alert(data.message);
-
-        });
-
-
-
-        // EINTRAG SPEICHERN
-
-        document.getElementById("entryForm").addEventListener("submit", async function(event) {
-
-            // Seite nicht neu laden
-            event.preventDefault();
-
-            // Werte auslesen
-            const title = document.getElementById("title").value;
-            const content = document.getElementById("content").value;
-
-            // POST Request an Flask
-            const response = await fetch("/entries", {
-
-                method: "POST",
-
-                headers: {
-                    "Content-Type": "application/json"
-                },
-
-                // Daten senden
-                body: JSON.stringify({
-                    title: title,
-                    content: content
-                })
-
-            });
-
-            // Antwort lesen
-            const data = await response.json();
-
-            // Nachricht anzeigen
-            alert(data.message || "Eintrag gespeichert");
-
-            // Einträge neu laden
-            loadEntries();
-
-        });
-
-
-
-// EINTRÄGE LADEN
-
-async function loadEntries() {
-
-    // GET Request
-        const response = await fetch("/entries");
-
-    // JSON Daten lesen
-        const entries = await response.json();
-
-            // HTML Bereich auswählen
-            const container = document.getElementById("entriesContainer");
-
-            // Vorherigen Inhalt löschen
-            container.innerHTML = "";
-
-            // Alle Einträge durchlaufen
-            entries.forEach(entry => {
-
-                // HTML Karten erstellen
-                container.innerHTML += `
-                    <div class="entry-card">
-
-                        <h3>${entry.title}</h3>
-
-                        <p>${entry.content}</p>
-
-                        <button onclick="editEntry(${entry.id})">
-                            Bearbeiten
-                        </button>
-
-                        <button onclick="deleteEntry(${entry.id})">
-                            Löschen
-                        </button>
-
-                    </div>
-                `;
-
-            });
-
-        }
-
-
-
-// EINTRAG BEARBEITEN
-
-async function editEntry(id) {
-
-    // Neuer Titel
-    const newTitle = prompt("Neuer Titel:");
-
-    // Neuer Inhalt
-    const newContent = prompt("Neuer Inhalt:");
-
-    // Prüfen ob Felder leer sind
-    if (!newTitle || !newContent) {
-
-        alert("Titel und Inhalt dürfen nicht leer sein");
-
-        return;
-    }
-
-    // PUT Request an Flask
-    await fetch(`/entries/${id}`, {
-
-        method: "PUT",
-
-        headers: {
-            "Content-Type": "application/json"
-        },
-
-        body: JSON.stringify({
-
-            title: newTitle,
-            content: newContent
-
-        })
-
-    });
-
-    // Einträge neu laden
-    loadEntries();
-
-}
-
-
-
-        // EINTRAG LÖSCHEN
-
-async function deleteEntry(id) {
-
-    // DELETE Request
-         await fetch(`/entries/${id}`, {
-
-            method: "DELETE"
-
-         });
-
-        // Einträge neu laden
-        loadEntries();
-
-    }
-
-
-
-    // Beim Laden automatisch alle Einträge anzeigen
-    loadEntries();
-
-    </script>
 
 </body>
 
