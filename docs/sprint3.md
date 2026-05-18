@@ -79,7 +79,7 @@
 
 ## 📅 Montag
 
-### 🎯 Ziele für heute
+## 🎯 Ziele für heute
 
 - Neue Landingpage erstellt
 - Login Seite erweitert
@@ -94,7 +94,7 @@
 ---
 
 
-### ✅ Erledigt
+## ✅ Erledigt
 
 - Alle Seiten erfolgreich verbunden
 - Neue Flask Routes ergänzt
@@ -107,7 +107,7 @@
 ---
 
 
-### ⚠️ Probleme
+## ⚠️ Probleme
 
 - Navigation korrekt verbinden
 - Seitenstruktur sauber aufteilen
@@ -117,7 +117,7 @@
 ---
 
 
-### 💡 Lösungen
+## 💡 Lösungen
 
 - Separate HTML Seiten erstellt
 - Neue Flask Routes ergänzt
