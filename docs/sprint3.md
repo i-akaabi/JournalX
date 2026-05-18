@@ -1,99 +1,125 @@
-# Sprint 3 – JournalX
+# Sprint 3 – Woche 3
 
-## Ziel von Sprint 3
+## 📅 Ziele für Sprint 3
 
-In Sprint 3 soll das bisherige Flask Backend zu einer vollständigen interaktiven Webanwendung erweitert werden.
+- Frontend vollständig erweitern
+- Benutzeroberfläche verbessern
+- Login und Registrierung integrieren
+- Journal Oberfläche entwickeln
+- Frontend mit Flask Backend verbinden
+- Navigation zwischen allen Seiten aufbauen
+- Benutzerfluss verbessern
 
-Der Fokus liegt dabei auf:
-- Benutzeroberfläche
-- Frontend Entwicklung
-- JavaScript Integration
-- Verbindung zwischen Frontend und Backend
-- Verbesserung der Benutzerinteraktion
-
----
-
-# Geplante Funktionen
-
-## Benutzeroberfläche
-
-- Modernere Startseite erstellen
-- Navigation ergänzen
-- Login Bereich integrieren
-- Journal Bereich gestalten
-- Dynamische Darstellung der Einträge
 
 ---
 
-## JavaScript Integration
 
-Die HTML Oberfläche soll mit JavaScript erweitert werden.
+## 📌 Fokus
 
-Geplant ist:
-- Fetch API verwenden
-- Verbindung zur Flask API herstellen
+- Strukturierte Webanwendung entwickeln
+- Verbindung zwischen Frontend und Backend verbessern
+- JavaScript Integration erweitern
 - CRUD Funktionen direkt im Frontend nutzen
+- Projekt präsentationsreif weiterentwickeln
+
 
 ---
 
-# CRUD Erweiterung
 
-Das bestehende Backend soll vollständig mit dem Frontend verbunden werden.
+## ✅ Geplante Aufgaben
 
-Folgende Funktionen sollen direkt über die Oberfläche nutzbar sein:
+- Landingpage modernisieren
+- Login Seite erstellen
+- Registrierungsseite erstellen
+- Journal Seite erstellen
+- Navigation ergänzen
+- Fetch API integrieren
+- CRUD Funktionen im Frontend nutzen
+- Benutzerfluss verbessern
+- GitHub Repository anpassen
+- Regelmäßige Git Commits erstellen
 
-- Einträge erstellen
-- Einträge anzeigen
-- Einträge bearbeiten
-- Einträge löschen
-
----
-
-# Login System
-
-Das vorhandene Login System soll in die Benutzeroberfläche integriert werden.
-
-Benutzer sollen sich direkt über die Webseite anmelden können.
 
 ---
 
-# Verwendete Technologien
 
-- Python
-- Flask
-- SQLite
-- HTML
-- CSS
-- JavaScript
-- Git
-- GitHub
+## 🧠 Lernziele
 
----
+- Frontend und Backend besser verbinden
+- Flask Routes verstehen
+- Fetch API besser verstehen
+- JavaScript im Frontend nutzen
+- CRUD Funktionen praktisch anwenden
+- Benutzeroberflächen strukturieren
 
-# Aktueller Stand
-
-Aktuell existiert:
-- Flask Backend
-- SQLite Datenbank
-- REST API
-- grundlegendes Login System
-- CRUD Funktionen im Backend
-
-Sprint 3 konzentriert sich nun auf die vollständige Frontend Integration.
 
 ---
 
-# Geplante Erweiterungen
 
-Mögliche weitere Funktionen:
-- Registrierungssystem
-- Benutzer Sessions
-- öffentliche Journal Beiträge
-- Profilseiten
-- AWS Hosting
+## ⚠️ Probleme
+
+- Seitenstruktur sauber aufteilen
+- Verbindung zwischen HTML und Flask verstehen
+- Navigation korrekt integrieren
+- Frontend und Backend synchron halten
+
 
 ---
 
-# Ziel des Sprints
 
-Am Ende von Sprint 3 soll eine funktionierende interaktive Journal Webanwendung entstehen, bei der Frontend, Backend und Datenbank vollständig miteinander verbunden sind.
+## 💡 Lösungen
+
+- Separate HTML Seiten erstellt
+- Neue Flask Routes ergänzt
+- Navigation zwischen allen Seiten aufgebaut
+- Fetch API erfolgreich integriert
+- Benutzerfluss Schritt für Schritt getestet
+
+---
+
+## 📅 Montag
+
+### 🎯 Ziele für heute
+
+- Neue Landingpage erstellt
+- Login Seite erweitert
+- Registrierungsseite ergänzt
+- Journal Seite aufgebaut
+- Navigation integriert
+- Benutzerfluss verbessert
+- Frontend modernisiert
+- GitHub Repository auf „JournalX“ umbenannt
+
+
+---
+
+
+### ✅ Erledigt
+
+- Alle Seiten erfolgreich verbunden
+- Neue Flask Routes ergänzt
+- CRUD Funktionen getestet
+- Frontend und Backend verbunden
+- Navigation erfolgreich getestet
+- Mehrere Git Commits erstellt
+
+
+---
+
+
+### ⚠️ Probleme
+
+- Navigation korrekt verbinden
+- Seitenstruktur sauber aufteilen
+- Verbindung zwischen Frontend und Backend verstehen
+
+
+---
+
+
+### 💡 Lösungen
+
+- Separate HTML Seiten erstellt
+- Neue Flask Routes ergänzt
+- Benutzerfluss Schritt für Schritt getestet
+- Navigation zwischen allen Seiten aufgebaut
