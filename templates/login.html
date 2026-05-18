@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <!-- Zeichencodierung -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser Titel -->
+    <title>Login - JournalX</title>
+
+    <style>
+
+        /* Gesamte Webseite */
+        body {
+
+            margin: 0;
+
+            font-family: Arial, sans-serif;
+
+            background-color: #0f172a;
+
+            color: white;
+
+            /* Zentriert den Login Bereich */
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+        }
+
+        /* Login Box */
+        .login-container {
+
+            background-color: #1e293b;
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            width: 400px;
+
+            text-align: center;
+
+        }
+
+        /* Überschrift */
+        h1 {
+
+            margin-bottom: 30px;
+
+            color: #3b82f6;
+
+        }
+
+        /* Eingabefelder */
+        input {
+
+            width: 100%;
+
+            padding: 15px;
+
+            margin: 10px 0;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background-color: #0f172a;
+
+            color: white;
+
+            font-size: 16px;
+
+            box-sizing: border-box;
+
+        }
+
+        /* Login Button */
+        button {
+
+            width: 100%;
+
+            padding: 15px;
+
+            margin-top: 20px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background-color: #3b82f6;
+
+            color: white;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+        }
+
+        /* Text unter dem Formular */
+        p {
+
+            margin-top: 20px;
+
+        }
+
+        /* Link */
+        a {
+
+            color: #3b82f6;
+
+            text-decoration: none;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Login Bereich -->
+    <div class="login-container">
+
+        <!-- Überschrift -->
+        <h1>Login</h1>
+
+        <!-- Login Formular -->
+        <form id="loginForm">
+
+            <!-- Benutzername -->
+            <input
+                type="text"
+                id="username"
+                placeholder="Benutzername"
+            >
+
+            <!-- Passwort -->
+            <input
+                type="password"
+                id="password"
+                placeholder="Passwort"
+            >
+
+            <!-- Login Button -->
+            <button type="submit">
+
+                Einloggen
+
+            </button>
+
+        </form>
+
+        <!-- Link zur Registrierung -->
+        <p>
+
+            Noch keinen Account?
+
+            <a href="/register">
+
+                Registrieren
+
+            </a>
+
+        </p>
+
+    </div>
+
+    <script>
+
+        // Login Formular überwachen
+
+        document.getElementById("loginForm").addEventListener("submit", async function(event) {
+
+            // Verhindert Neuladen der Seite
+            event.preventDefault();
+
+            // Benutzername auslesen
+            const username = document.getElementById("username").value;
+
+            // Passwort auslesen
+            const password = document.getElementById("password").value;
+
+            // Anfrage an Flask Backend senden
+            const response = await fetch("/login", {
+
+                method: "POST",
+
+                headers: {
+
+                    "Content-Type": "application/json"
+
+                },
+
+                // Daten als JSON senden
+                body: JSON.stringify({
+
+                    username: username,
+
+                    password: password
+
+                })
+
+            });
+
+            // Antwort vom Backend lesen
+            const data = await response.json();
+
+            // Nachricht anzeigen
+            alert(data.message);
+
+            // Wenn Login erfolgreich war
+            if (data.message === "Login erfolgreich") {
+
+                // Weiterleitung zur Journal Seite
+                window.location.href = "/journal";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
