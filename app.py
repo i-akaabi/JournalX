@@ -95,6 +95,13 @@ def register_page():
 
     return render_template("register.html")
 
+# Journal Seite anzeigen
+
+@app.route("/journal")
+def journal_page():
+
+    return render_template("journal.html")
+
 
 # ---------------------------------------------------
 # ALLE EINTRÄGE ANZEIGEN (READ)
