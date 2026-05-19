@@ -1,6 +1,6 @@
 # JournalX – Digitale Journal Webanwendung
 
-JournalX ist eine moderne Journal- und Tagebuch-Webanwendung, die mit Flask, SQLite, HTML, CSS und JavaScript entwickelt wurde.
+JournalX ist eine moderne Journal- und Tagebuch-Webanwendung, die mit Python, Flask, SQLite, HTML, CSS und JavaScript entwickelt wurde.
 
 Benutzer können persönliche Journal-Einträge erstellen, anzeigen, bearbeiten und löschen. Zusätzlich verfügt die Anwendung über ein Login- und Registrierungssystem.
 
