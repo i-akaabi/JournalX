@@ -123,3 +123,43 @@
 - Neue Flask Routes ergänzt
 - Benutzerfluss Schritt für Schritt getestet
 - Navigation zwischen allen Seiten aufgebaut
+
+---
+
+# 📅 Dienstag
+
+## 🎯 Ziele für heute
+
+- README verbessern
+- Dokumentation ergänzen
+- Projekt testen
+- API Endpoints besser verstehen
+- Vorbereitung für die Präsentation
+
+---
+
+## ✅ Erledigt
+
+- README angepasst
+- Technologien ergänzt
+- Dokumentation erweitert
+- Projekt erfolgreich getestet
+- API Endpoints erklärt
+
+---
+
+## ⚠️ Probleme
+
+- Unterschied zwischen Python und Flask
+- API Endpoints besser verstehen
+- Frontend und Backend erklären
+
+---
+
+## 💡 Lösungen
+
+- README verbessert
+- Technische Begriffe erklärt
+- Aufbau der API besser verstanden
+
+---
