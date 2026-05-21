@@ -164,3 +164,21 @@ Registriert einen Benutzer.
 
 ```bash
 source .venv/bin/activate
+
+# Sprint Dokumentation
+
+## Sprint 1
+- Projektplanung
+- Flask Setup
+- SQLite Integration
+
+## Sprint 2
+- CRUD Funktionen umgesetzt
+- REST API entwickelt
+- Login und Registrierung integriert
+
+## Sprint 3
+- Frontend verbessert
+- API getestet
+- Präsentation vorbereitet
+- Dokumentation ergänzt
